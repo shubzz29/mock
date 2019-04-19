@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body onload="preventBack()"  onunload="">
+        <div style="border: 1px solid black;margin-left: 400px;margin-right: 400px;">
+        <form action="process.jsp">
+            Enter username<input type="text" name="uname"/><br><br>
+            Enter Password: <input type="password" name="password"/><br><br>
+            <input type="submit" value="Submit" />
+        </form>
+        </div>
+        <script type="text/javascript">
+           // window.history.forward();
+            function preventBack()
+            {
+                window.history.forward();
+                
+            }
+           // setTimeout("preventBack",0);
+            //window.onunload=function (){null};
+            
+                
+            
+            </script>
+    </body>
+</html>
