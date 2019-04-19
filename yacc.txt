@@ -1,0 +1,14 @@
+YACC is a parser generator that takes an input file with an attribute-enriched BNF (Backus –
+Naur Form) grammar specification. It generates the output C file y.tab.c containing the
+function int yyparse(void) that implements its parser.
+This function automatically invokes yylex() everytime it needs a token to continue parsing.
+
+source yacc file->yacc compiler->y.tab.c
+y.tab.c->Ccompiler-a.out
+input->a.out->output
+
+COMMANDS:
+yacc -d sentence.y
+lex senetnce.l
+gcc lex.yy.c y.tab.c
+./a.out input

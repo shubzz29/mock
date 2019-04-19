@@ -1,0 +1,9 @@
+function 
+int yylex(void)->call to invoke lexer returns tokens,
+char *yytext -> pointer to matched string
+yyleng->length of matched string
+yylval->value associated with tokem
+int yywarap(void)->wrapup,return 1 if done, 0 if not done
+FILE *yyin ->input file
+FILE *yyout ->output file
+
